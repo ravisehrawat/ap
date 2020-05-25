@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <title>Form</title>
+		<script>
+			function validateForm() {
+				var x = document.forms["myForm"]["fname"].value;
+				if (x == "") {
+					alert("FIRST Name must be filled out");
+					return false;
+						}
+				var y = document.forms["myForm"]["lname"].value;
+				if (y == "") {
+					alert("LAST Name must be filled out");
+					return false;
+						}		
+				var c = document.forms["myForm"]["gender"].value;
+				if (c == "") {
+					alert("gender must be filled out");
+					return false;
+						}
+				var z = document.forms["myForm"]["username"].value;
+				if (z == "") {
+					alert("Username must be filled out");
+					return false;
+						}
+				var a = document.forms["myForm"]["pwd"].value;
+				if (a == "") {
+					alert("Password must be filled out");
+					return false;
+						}
+				var b = document.forms["myForm"]["pwd1"].value;
+				if (b == "") {
+					alert("Confirm password must be filled out");
+					return false;
+						}
+				if (b == a) {
+					alert("Password and Confirm Password must be same");
+					return false;
+						}
+				var d = document.forms["myForm"]["birthday"].value;
+				if (d == "") {
+					alert("birthday must be filled out");
+					return false;
+						}
+				var e = document.forms["myForm"]["email"].value;
+				if (e == "") {
+					alert("email must be filled out");
+					return false;
+						}
+				}		
+		</script>
+		<style>
+			input[type=text], input[type=password], input[type=date], input[type=email], {
+			width: 100%;
+			padding: 15px;
+			margin: 5px 0 22px 0;
+			display: inline-block;
+			border: none;
+			background: #f1f1f1;
+			}
+		</style>
+    </head>
+    <body>
+	<?php
+
+$nameErr = $emailErr = $genderErr = $websiteErr = "";
+$name = $email = $gender = $comment = $website = "";
+?>
+	
+	
+	<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+		<label for="fname">First name:</label><br>
+		<input type="text" id="fname" name="fname" ><br>
+		<label for="lname">Last name:</label><br>
+		<input type="text" id="lname" name="lname"><br>
+		<input type="radio" id="male" name="gender" value="male">
+		<label for="male">Male</label><br>
+		<input type="radio" id="female" name="gender" value="female">
+		<label for="female">Female</label><br>
+		<input type="radio" id="other" name="gender" value="other">
+		<label for="other">Other</label><br>
+		<label for="username">Username:</label><br>
+		<input type="text" id="username" name="username"><br>
+		<label for="pwd">Password:</label><br>
+		<input type="password" id="pwd" name="pwd"><br>
+		<label for="pwd1">Confirm Password:</label><br>
+		<input type="password" id="pwd1" name="pwd"><br>
+		<label for="birthday">Birthday:</label>
+		<input type="date" id="birthday" name="birthday"><br>
+		<label for="email">Enter your email:</label>
+		<input type="email" id="email" name="email"><br>
+	
+		<input type="submit" value="Submit">
+		
+	</form>
+	
+	<?php
+echo "<h2>Your Input:</h2>";
+echo $name;
+echo "<br>";
+echo $email;
+echo "<br>";
+echo "<br>";
+echo $gender;
+?>
+        
+    </body>
+</html>
+<!--	<label for="phone">Enter your phone number:</label>
+		<input type="tel" id="phone" name="phone" maxlength="10" size="10" pattern="[6-9]{1}-[0-9]{9}" required><br> --!>
