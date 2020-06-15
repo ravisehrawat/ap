@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>HTML Forms</title>
+<style >
+  body{ background-color : white; }
+  .abc{ margin :0px 300px 200px 300px ;
+    }
+    .ab{ margin : auto;
+    background-color: grey;}
+  input[type=text],input[type=email]{ width : 90%;
+          }
+.a{ padding : 20px;
+    text-align :center;
+
+  }
+</style>
+</head>
+<body>
+	<div class="a">
+		<h1>Student Form</h1>
+		<img src="http://iiitsonepat.ac.in/iiits-content/uploads/2019/06/logonew.png" alt="Logo" width="60%">
+	</div>
+	<div class="abc">
+		<form class="" action="Submit.html" method="post">
+			<div class="ab">
+				<table width="100%">
+					<tr>
+						<td>Name:</td>
+						<td><input type="text" placeholder="Enter Your Name Here" required></td>
+					</tr>
+					<tr>
+						<td>Roll No:</td>
+						<td>  <input type="text" placeholder="Enter Your Roll No here" required></td>
+					</tr>
+					<tr>
+						<td>Mobile No:</td>
+						<td><input type="tel"  placeholder="Enter Your Number Here" pattern="[789][0-9]{9}" required></td>
+					</tr>
+					<tr>
+						<td>E-mail:</td>
+						<td><input type="email" placeholder="Enter Your E-mail Here" required></td>
+					</tr>
+						<td>College:</td>
+						<td><input type="text" placeholder="Enter Your College Name"></td>
+				</table><br><br><br>
+				<table width="100%">
+					<tr>
+						<td><input type="submit" value="Submit"></td>
+						<td><input type="reset" value="Clear"></td>
+					</tr>
+				</table>
+			</div>
+		</form>
+	</div>
+
+</body>
+</html>
