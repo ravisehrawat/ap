@@ -1,0 +1,13 @@
+body{ background-color : white; 
+	}
+.abc{ margin :0px 300px 200px 300px ;
+	}
+.ab{ margin : auto;
+     background-color: grey;
+   }
+input[type=text],input[type=email]{ width : 90%;
+								  }
+.a{ padding : 20px;
+    text-align :center;
+
+  }
