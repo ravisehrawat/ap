@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<head>
+<title> homepage </title>
+<link rel="stylesheet" type="text/css" href="style.css">	
+</head>
+<body>
+
+<div>
+	<img src="http://iiitsonepat.ac.in/iiits-content/uploads/2019/06/logonew.png" alt="Logo" width="100%">
+</div>
+
+<div class="navbar">
+	<a href="1.php">Home</a>
+	<a href="#">Admission</a>
+	<a href="#">Academics</a>
+	<a href="#" class="right">Covid-19 Notes</a>
+</div>
+
+<section>
+  <img class="mySlides" src="http://iiitsonepat.ac.in/iiits-content/uploads/2018/06/new-banner3.jpg" style="width:100%">
+  <img class="mySlides" src="http://iiitsonepat.ac.in/iiits-content/uploads/2018/06/new-banner2.jpg" style="width:100%">
+  <img class="mySlides" src="http://iiitsonepat.ac.in/iiits-content/uploads/2018/06/new-banner4.jpg" style="width:100%">
+</section>
+
+<script>
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>
