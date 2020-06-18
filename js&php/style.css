@@ -1,0 +1,15 @@
+body{box-sizing: border-box;
+  border: 3px solid green;
+border-radius: 2px;
+background-color: aqua}
+legend{color: SlatebLUE;}
+.abc{text-align: center;
+margin: auto;}
+input[type=text],input[type=Password],input[type=email],textarea{background-color: lightgrey;}
+input[type=radio]{margin-left:70px; }
+.abcd{margin-left: 200px;}
+input[type=submit],input[type=reset]{background-color: mediumseagreen;;
+                  width:40%;
+                height: 30px;}
+.bc{ text-align: center;
+background-color: tomato;}
