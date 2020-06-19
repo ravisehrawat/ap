@@ -17,10 +17,9 @@ $pss=$_POST['password'];
 </script>
 </head>
 <body>
-  <div class="bc">
+  <div class="a">
     <table width="100%">
-      <th class="bc"><h1>Registration Form</h1></th>
-      <th><img src="lgo.jpg" height="70%" ></th>
+      <th class="a"><h1>Registration Form</h1></th>
     </table>
       </div>
 <form method="POST" action=" " name="regform" onsubmit="return validate()">
@@ -56,9 +55,9 @@ $pss=$_POST['password'];
     <legend><b>Contact Info</b></legend>
     <table width="100%">
       <th><label>E-mail:</label>
-        <input type="email" id="a3"  placeholder="Enter your e-mail here"></th>
+        <input type="email" id="a3"  placeholder="Enter your e-mail here" required></th>
       <th><label>Mobile No:</label>
-      <input type="text" id="a4"  placeholder="Enter your mobile number"></th>
+      <input type="tel" id="a4"  placeholder="Enter your mobile number" pattern="[789][0-9]{9}" required></th>
     </table>
      <br>
     <fieldset>
